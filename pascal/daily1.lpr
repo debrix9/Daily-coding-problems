@@ -54,7 +54,7 @@ type
     for item in list do begin
       tempSum := sum - item;
       inc(access);
-      for value in list do begin
+      for value in auxList do begin
          inc(access);
          if value = tempSum then begin
            //WriteLn(IntToStr(item) + ' + ' + IntToStr(tempSum) + ' = ' + IntToStr(sum));
